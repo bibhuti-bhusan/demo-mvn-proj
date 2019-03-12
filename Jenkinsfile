@@ -1,45 +1,39 @@
 pipeline {
-      agent any	
-      stages {
+      agent any
+	tools{
+	    maven 'maven'
+	    jdk 'jdk1.8'
+	}
+	stages {
 
 	   stage ('compile stage') {
 	    steps {
-	      maven(name: 'maven') {
 		sh 'mvn clean compile'
-	      }
-	    }   
+		}   
 	   }
 	
 	   stage ('Testing stage') {
             steps {
-              maven(name: 'maven') {
                 sh 'mvn test'
-              }
-            }
+                }
            }
 
 	   stage ('package stage') {
             steps {
-              maven(name: 'maven') {
-                sh 'mvn package'
-              }
-            }
+		sh 'mvn package'
+                }
            }
 	   
 	   stage ('install stage') {
             steps {
-              maven(name: 'maven') {
                 sh 'mvn install'
-              }
-            }
+                }
            }
 
 	   stage ('deployment stage') {
             steps {
-              maven(name: 'maven') {
                 sh 'mvn deploy'
-              }
-            }
+                }
            }
 	   stage ('deployment-to-tomcat') {
             steps {
