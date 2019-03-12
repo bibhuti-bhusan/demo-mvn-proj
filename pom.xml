@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>ERICSSION</groupId>
+    <groupId>ERICSSON</groupId>
     <artifactId>DEMO</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
@@ -31,13 +31,13 @@
     </developers>
     <distributionManagement>
 	<repository>
-            <id>Ericssion</id>
+            <id>Ericsson</id>
             <name>demoproj</name>
             <url>http://18.191.60.8:8080/nexus/content/repositories/Ericssion/</url>
         </repository>
         
 	<snapshotRepository>
-            <id>Ericssion-snap</id>
+            <id>Ericsson-snap</id>
             <name>demoproj-snap</name>
             <url>http://18.191.60.8:8080/nexus/content/repositories/Ericssion-snap/</url>
         </snapshotRepository>        
