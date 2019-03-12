@@ -31,15 +31,15 @@
     </developers>
     <distributionManagement>
 	<repository>
-            <id>my-nexus-repo</id>
-            <name> Release </name>
-            <url>http://192.168.1.252:8081/nexus/content/repositories/my-nexus-repo/</url>
+            <id>Ericssion</id>
+            <name>demoproj</name>
+            <url>http://18.191.60.8:8080/nexus/content/repositories/Ericssion/</url>
         </repository>
         
 	<snapshotRepository>
-            <id>my-nexus-repo</id>
-            <name> snapshot-Release </name>
-            <url>http://192.168.1.252:8081/nexus/content/repositories/snapshots/</url>
+            <id>Ericssion-snap</id>
+            <name>demoproj-snap</name>
+            <url>http://18.191.60.8:8080/nexus/content/repositories/Ericssion-snap/</url>
         </snapshotRepository>        
     </distributionManagement>
     <build>
