@@ -33,12 +33,12 @@
 	<repository>
             <id>Ericsson</id>
             <name>demoproj</name>
-            <url>http://18.191.60.8:8080/nexus/content/repositories/Ericsson/</url>
+            <url>http://3.18.101.47:8080/nexus/content/repositories/Ericsson/</url>
         </repository>
         <snapshotRepository>
             <id>Ericsson-snap</id>
             <name>demoproj-snap</name>
-            <url>http://18.191.60.8:8080/nexus/content/repositories/Ericsson-snap/</url>
+            <url>http://3.18.101.47:8080/nexus/content/repositories/Ericsson-snap/</url>
         </snapshotRepository>        
     </distributionManagement>
     <build>
