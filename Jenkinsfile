@@ -4,7 +4,7 @@ pipeline {
 
 	   stage ('compile stage') {
 	    steps {
-	      maven(maven: 'maven') {
+	      maven(name: 'maven') {
 		sh 'mvn clean compile'
 	      }
 	    }   
@@ -12,7 +12,7 @@ pipeline {
 	
 	   stage ('Testing stage') {
             steps {
-              maven(maven: 'maven') {
+              maven(name: 'maven') {
                 sh 'mvn test'
               }
             }
@@ -20,7 +20,7 @@ pipeline {
 
 	   stage ('package stage') {
             steps {
-              maven(maven: 'maven') {
+              maven(name: 'maven') {
                 sh 'mvn package'
               }
             }
@@ -28,7 +28,7 @@ pipeline {
 	   
 	   stage ('install stage') {
             steps {
-              maven(maven: 'maven') {
+              maven(name: 'maven') {
                 sh 'mvn install'
               }
             }
@@ -36,7 +36,7 @@ pipeline {
 
 	   stage ('deployment stage') {
             steps {
-              maven(maven: 'maven') {
+              maven(name: 'maven') {
                 sh 'mvn deploy'
               }
             }
