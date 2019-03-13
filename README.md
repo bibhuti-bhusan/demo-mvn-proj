@@ -1,2 +1,2 @@
 # maven-project
-this is pipiline -demo
+this is pipe-line-demo
